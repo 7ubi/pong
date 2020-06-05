@@ -23,16 +23,16 @@ def gameLoop():
 
 		key = pygame.key.get_pressed()
 		if key[pygame.K_w]:
-			left.move(-1)
+			left.move(-1, height)
 
 		if key[pygame.K_s]:
-			left.move(1)
+			left.move(1, height)
 
 		if key[pygame.K_UP]:
-			right.move(-1)
+			right.move(-1, height)
 
 		if key[pygame.K_DOWN]:
-			right.move(1)
+			right.move(1, height)
 
 
 		screen.fill(pygame.Color(0, 0, 0))

@@ -8,8 +8,8 @@ class Paddle:
 		self.h = h
 		self.speed = speed
 
-	def move(self, dir):
-		if self.y >= 0 and self.y + self.h <= 500 or self.y <= 0 and dir == 1 or self.y + self.h >= 500 and dir == -1:
+	def move(self, dir, height):
+		if self.y >= 0 and self.y + self.h <= height or self.y <= 0 and dir == 1 or self.y + self.h >= height and dir == -1:
 			self.y += dir * self.speed
 	
 
